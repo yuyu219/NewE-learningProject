@@ -1,4 +1,33 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model name="Test1.xcdatamodel" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
-    <elements/>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="7701" systemVersion="14E46" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="CourseData" representedClassName="CourseData" syncable="YES">
+        <attribute name="courseId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="courseName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="PeriodTime" representedClassName="PeriodTime" syncable="YES">
+        <attribute name="begin_time" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="period" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+    </entity>
+    <entity name="SettingCoursePushData" representedClassName="SettingCoursePushData" syncable="YES">
+        <attribute name="courseId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="period" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="weekdays" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="SettingItem" representedClassName="SettingItem" syncable="YES">
+        <attribute name="itemName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="state" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <entity name="UserData" representedClassName="UserData" syncable="YES">
+        <attribute name="passWord" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CourseData" positionX="-36" positionY="27" width="128" height="75"/>
+        <element name="PeriodTime" positionX="-27" positionY="63" width="128" height="75"/>
+        <element name="SettingCoursePushData" positionX="-27" positionY="45" width="128" height="120"/>
+        <element name="SettingItem" positionX="-36" positionY="36" width="128" height="75"/>
+        <element name="UserData" positionX="-36" positionY="9" width="128" height="75"/>
+    </elements>
 </model>
